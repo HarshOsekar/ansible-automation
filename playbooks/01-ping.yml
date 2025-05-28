@@ -1,0 +1,6 @@
+- name: Ping all AWS EC2 hosts
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: Ping
+      ping:
